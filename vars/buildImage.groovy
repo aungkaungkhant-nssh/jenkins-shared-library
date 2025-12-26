@@ -8,7 +8,7 @@ def call(){
             docker push aungkaungkhant107/docker-test:v1.0.2
         '''
         }
+  }
 }
-
 
 
