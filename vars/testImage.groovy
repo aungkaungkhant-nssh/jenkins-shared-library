@@ -1,3 +1,6 @@
-def testApp(){
-    echo 'testing the application.....'
+def call(){
+    stage("testImage"){
+        echo 'testing the application.....'
+    }
+  
 }
