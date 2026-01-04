@@ -1,6 +1,6 @@
 def call() {
     return sh(
-        script: "node -p \"require('./package.json').version\"",
+        script: "cat package.json | grep '\"version\"' | head -1 | sed 's/.*: \"//;s/\",//'",
         returnStdout: true
     ).trim()
 }
